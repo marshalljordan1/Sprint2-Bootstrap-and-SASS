@@ -1,0 +1,40 @@
+// custom variables
+
+$primary: #fca311;
+$secondary: #14213d;
+
+button {
+    background-color: #FA5859;
+}
+
+.square {
+    border-radius: 180, 180, 180, 180;
+}
+
+.firefox {
+    display: flex;
+    position: relative;
+    top: -100px;
+}
+
+@media only screen and (max-width: 300px)
+ {
+ .nav {
+    flex-direction: column;
+ }
+
+.nav-link {
+    border-bottom: solid #fca311 5px;
+ }
+}
+
+// Accordion customisation
+$accordion-button-icon: url('/Resources/Imagenes/icon-arrow.svg');
+
+// Typography
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
