@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Bookmark</title>
 
 </head>
 <body>
-  <div class="container-fluid mb-5 pb-5 border">
+  <div class="container-fluid mb-5 pb-5">
 <header>
   
 <!-- // NAVBAR  -->
 
-    <nav class="navbar navbar-expand-md bg-white mt-5">
+    <nav class="navbar navbar-expand-lg fixed-top bg-white pt-5">
       <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/Resources/Imagenes/logo-bookmark.svg" alt="Bookmark logo ">
+      <a class="navbar-brand ms-5 ps-4" href="#">
+        <img src="./assets/img/logo-bookmark.svg" alt="Bookmark logo ">
       </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mx-4">
             <li class="nav-item">
               <a class="nav-link active mx-4" aria-current="page" href="#features"><small>FEATURES</small></a>
@@ -35,7 +34,7 @@
             <li>
               <a class="nav-link mx-4" href="#"><small>CONTACT</small></a>
             </li>
-            <button type="button" class="btn-login text-white px-4 border-0 rounded ms-4 me-5 shadow"><small>LOGIN</small></button>
+            <button type="button" class="btn btn-salmon text-white px-4 rounded ms-4 me-5 shadow"><small>LOGIN</small></button>
           </ul>
         </div>
       </div>
@@ -46,22 +45,23 @@
 <main>
 
   <!-- // HERO SECTION  -->
-  <div class="container-fluid mt-md-5">
-      <div class="row d-flex justify-content-center ">
-        <div class="card col-md-6 order-md-0 order-sm-1 text-md-start text-sm-center pt-5 border-0 mt-md-5 ">
-          <div class="card-body">
-            <h1 class="card-title fw-bold display-3 mt-md-5 ">A Simple Bookmark Manager</h1>
-            <p class="card-text col-md-9 text-black-50 my-4 mb-5 fs-5 ">A clean and simple interface to organize your favourtie websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-            <a href="#" class="btn btn-primary shadow col-sm-5 col-md-4 py-sm-3 me-3 ">Get it on Chrome</a>
-            <a href="#" class="btn btn-secondary shadow col-sm-5 col-md-4 py-sm-3 ">Get it on Firefox</a>
-          </div>
+  <div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col card border-0 mt-5 pt-5">
+          <div class="col ms-2 d-flex flex-column gap-2">
+            <h1 class="card-title fw-bold display-4 pt-5 mt-5">A Simple Bookmark Manager</h1>
+            <p class="card-text text-black-50 fs-4">A clean and simple interface to organize your favourtie websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="d-flex gap-4">
+                <a href="#" class="btn btn-primary shadow p-3">Get it on Chrome</a>
+                <a href="#" class="btn shadow p-3">Get it on Firefox</a>
+            </div>
+           </div>  
         </div>
-        <div class="col-md-5 order-md-2 order-sm-0 ms-md-1 mt-5 d-flex justify-content-center top-20">
-          <img src="/Resources/Imagenes/illustration-hero.svg" alt="Outline of Bookmark's landing page" class="">
-      </div>
-
-
-      </div>
+        
+            <div class="col mt-5 pt-5">
+             <img class="mt-5 pt-3" src="/assets/img/illustration-hero.svg" alt="Outline of Bookmark's landing page">
+            </div>
+    </div>
   </div>
 
 
@@ -70,7 +70,7 @@
    <!-- // HEADING AND INFO -->
   <div class="container mt-5 mt-md-5">
     <div class="row">
-      <div class="card text-center pt-5 mt-md-5 border-0">
+      <div class="card text-center pt-5 mt-md-5">
         <div class="card-body">
           <h1 class="card-title text-center fw-bold display-6 mt-5">Features</h1>
           <p class="card-text col-md-6 offset-md-3 text-center text-black-50 my-4 mb-5 fs-5">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
@@ -105,7 +105,7 @@
     <div class="container mt-5 mt-md-5">
       <div class="row">
         <div class="col-4 col-md-6 col-sm-12 position-relative text-center text-md-end mt-md-5">
-          <img src="/Resources/Imagenes/illustration-features-tab-1.svg" alt="Outline of Bookmark's landing page" class="img-fluid position-relative start-0 pb-5 pb-lg-8 me-5 px-4 pe-md-5 pe-lg-0" style="z-index: 2;">
+          <img src="/assets/img/illustration-features-tab-1.svg" alt="Outline of Bookmark's landing page" class="img-fluid position-relative start-0 pb-5 pb-lg-8 me-5 px-4 pe-md-5 pe-lg-0" style="z-index: 2;">
         </div>
         <div class="card col-md-6 order-md-1 order-sm-1 text-md-start text-sm-center pt-5 border-0 mt-md-3">
           <div class="card-body">
@@ -137,7 +137,7 @@
   
     <div class="row d-flex justify-content-center ">
       <div class="col-md-2 col-sm-12 d-flex justify-content-sm-center">
-        <div class="card text-center py-5 shadow border-0 rounded-4" style="width: 18rem;">
+        <div class="card text-center py-5 shadow rounded-4" style="width: 18rem;">
           <div class="card-img py-3">
             <img src="/Resources/Imagenes/logo-chrome.svg" alt="Chrome logo - red yellow and green circle with blue dot in center">
           </div>
@@ -150,7 +150,7 @@
         </div>
       </div>
       <div class="col-md-2 col-sm-12 d-flex justify-content-sm-center">
-        <div class="card text-center py-5 shadow border-0 rounded-4 mt-4 firefox" style="width: 18rem;">
+        <div class="card text-center py-5 shadow  rounded-4 mt-4 firefox" style="width: 18rem;">
           <div class="card-img py-3">
             <img src="/Resources/Imagenes/logo-firefox.svg" alt="Chrome logo - red yellow and green circle with blue dot in center">
           </div>
@@ -163,7 +163,7 @@
         </div>
       </div>
       <div class="col-md-2 col-sm-12 d-flex justify-content-sm-center">
-        <div class="card text-center py-5 shadow border-0 rounded-4 mt-5" style="width: 18rem;">
+        <div class="card text-center py-5 shadow rounded-4 mt-5" style="width: 18rem;">
           <div class="card-img py-3">
             <img src="/Resources/Imagenes/logo-opera.svg" alt="Chrome logo - red yellow and green circle with blue dot in center">
           </div>
@@ -183,7 +183,7 @@
     <!-- // FAQ SECTION -->
 <div class="container mt-5 mt-md-5">
   <div class="row">
-    <div class="card text-center pt-5 mt-md-5 border-0">
+    <div class="card text-center pt-5 mt-md-5">
       <div class="card-body">
         <h1 class="card-title text-center fw-bold display-6 mt-5">Frequently Asked Questions</h1>
         <p class="card-text col-md-6 offset-md-3 text-center text-black-50 my-4 mb-5 fs-5">Here are some of our FAQs. If you'd like any other questions you'd like answered please feel free to email us.</p>
