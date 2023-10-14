@@ -1,15 +1,107 @@
-$primary: #5266DF;
-$secondary: #F7F7F6;
-
+$primary: #5266df;
+$secondary: #f7f7f6;
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 
 $custom-theme: (
-    "salmon": #FA5859
+  "salmon": #fa5859,
 );
-
 
 $theme-colors: map-merge($theme-colors, $custom-theme);
 
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.image-container {
+  position: relative;
+}
+
+.purple-shape-right {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  bottom: -50px;
+  right: -100px;
+  background-color: $primary;
+  border-radius: 0 0 0 50%;
+  z-index: 1;
+}
+
+.purple-shape-left {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  bottom: -80px;
+  left: -100px;
+  background-color: $primary;
+  border-radius: 0 0 50% 0;
+  z-index: 1;
+}
+
+.img {
+  position: relative;
+  z-index: 2;
+}
+
+.features-text {
+  width: 30%;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-active-link {
+  border-bottom: solid #fa5859;
+  border-bottom-color: #fa5859 !important;
+}
+
+.nav-underline .nav-link:hover {
+  color: #fa5859;
+  text-decoration: none !important;
+  border-bottom-color: transparent;
+}
+
+.footer-container {
+  background-color: #5266df;
+  margin: 8% 0 0 0;
+  padding: 5% 0;
+}
+
+.btn-contact {
+  color: white;
+}
+
+input {
+  color: gray;
+}
+
+.bottom-navbar {
+  background-color: #242946;
+}
+
+.navbar-brand {
+  width: 15%;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .features-text {
+    width: 95%;
+  }
+
+  .accordion-button::after {
+    background-image: url("../assets/img/icon-arrow.svg");
+  }
+
+  .bookmark-white {
+    width: 100%;
+  }
+}
