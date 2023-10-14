@@ -22,6 +22,18 @@ body {
   position: relative;
 }
 
+.larger-text {
+    font-size: xx-large;
+}
+
+.button-text {
+    font-size: larger;
+}
+
+.btn-lg {
+    padding: 5%;
+}
+
 .purple-shape-right {
   content: "";
   position: absolute;
@@ -52,7 +64,7 @@ body {
 }
 
 .features-text {
-  width: 30%;
+  width: 50%;
 }
 
 .nav-link {
@@ -76,6 +88,10 @@ body {
   padding: 5% 0;
 }
 
+.footer-text {
+  width:  25%;
+}
+
 .btn-contact {
   color: white;
 }
@@ -92,9 +108,23 @@ input {
   width: 15%;
 }
 
+.form-control {
+    width: 20%;
+}
+
 @media (min-width: 320px) and (max-width: 374px) {
   .features-text {
     width: 95%;
+  }
+
+  .bookmark-link {
+    border-bottom: 1px solid;
+    border-bottom-color: lightgray;
+  }
+
+  .top-border {
+    border-top: 1px solid;
+    border-top-color: lightgray;
   }
 
   .accordion-button::after {
@@ -102,6 +132,25 @@ input {
   }
 
   .bookmark-white {
-    width: 100%;
+    width: 40%;
+  }
+.navbar-brand {
+    margin-right: 0;
+}
+  .larger-text {
+    font-size: medium;
+}
+
+.button-text {
+    font-size: small;
+}
+
+.form-control {
+    width: 75%;
+}
+
+.footer-text {
+    width:  80%;
+    font-size: x-large;
   }
 }
